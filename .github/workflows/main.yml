@@ -36,3 +36,10 @@ jobs:
           echo test, and deploy your project.
       - name: runprog
         run: echo test
+      - uses: actions/checkout@master
+      - name: send message
+        uses: appleboy/telegram-action@master
+        with:
+          to: 1747226005
+          token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
+          message: Does it work?
