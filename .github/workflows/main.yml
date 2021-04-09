@@ -42,4 +42,4 @@ jobs:
           to: 379230514
           token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
           message: result..
-          document: a.out
+          document: main.cpp
