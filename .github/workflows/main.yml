@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: artifact
-          path: main.exe
+          path: "main.exe"
           retention-days: 10
       - name: send message
         uses: appleboy/telegram-action@master
@@ -40,4 +40,4 @@ jobs:
           to: 379230514
           token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
           message: Result
-          document: main.cpp
+          document: "main.exe"
