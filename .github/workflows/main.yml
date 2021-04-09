@@ -40,10 +40,12 @@ jobs:
         with:
           name: artifact
           path: a.out
+          retention-days: 1
       - uses: actions/checkout@master
       - name: send message
         uses: appleboy/telegram-action@master
         with:
           to: 379230514
           token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
-          message: Test
+          message: result:
+          document: a.out
