@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: artifact
-          path: a.out
+          path: a.o
           retention-days: 3
       - uses: actions/checkout@master
       - name: send message
