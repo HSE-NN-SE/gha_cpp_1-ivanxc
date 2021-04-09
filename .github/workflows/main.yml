@@ -31,15 +31,19 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-      - name: runprog
+        run:
+          g++ main.cpp
+      - name: write test message
         run: echo test
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifact
+          path: a.out
       - uses: actions/checkout@master
       - name: send message
         uses: appleboy/telegram-action@master
         with:
           to: 379230514
           token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
-          message: Does it work?
+          message: Test
