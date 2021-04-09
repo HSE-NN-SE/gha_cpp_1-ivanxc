@@ -15,9 +15,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  hello_gha:
-    runs-on: ubuntu-latest
-    
   # This workflow contains a single job called "build"
   hello_gha:
     # The type of runner that the job will run on
