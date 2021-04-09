@@ -33,7 +33,6 @@ jobs:
           name: artifact
           path: a.out
           retention-days: 10
-      - uses: actions/checkout@master
       - name: send message
         uses: appleboy/telegram-action@master
         with:
