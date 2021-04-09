@@ -47,5 +47,5 @@ jobs:
           with:
             to: 379230514
             token: 1747226005:AAHQ32qjCEJpZMurDVSlPLyDZztSrjYHCBw
-            message: Result
+            message: The ${{ github.event_name }} event triggered final step.
             document: main.exe
